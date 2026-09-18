@@ -408,8 +408,8 @@ select {
     justify-content: center;
     align-items: center;
     height: 45px;
-    width: 45px;
-    border-radius: 50px;
+    min-width: 45px;
+    border-radius: 50%;
     background-color: var(--primary-color);
     color: #fff;
 }
@@ -420,7 +420,7 @@ select {
 }
 .courses-wrapper .main .course-pagination li a{
     display: inline-block;
-    width: 27px;
+    min-width: 27px;
     line-height: 27px;
     border: 1px solid #0003;
     border-radius: 8px;
