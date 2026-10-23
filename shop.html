@@ -32,27 +32,77 @@
                         </a>
                         <div class="nav">
                             <ul>
-                                <li><a href="">Home</a></li>
-                                <li><a href="">COURSES</a></li>
-                                <li><a href="">EVENTS</a></li>
-                                <li><a href="">Pages</a></li>
-                                <li><a href="">PORTFOLIO</a></li>
-                                <li><a href="">BLOG</a></li>
-                                <li><a href="">SHOP</a></li>
+                                <li><a href="">Home</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Home version one</a></li>
+                                        <li><a href="#">Home version Two</a></li>
+                                        <li><a href="#">Home video background</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">COURSES</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Course 2 Column</a></li>
+                                        <li><a href="./courses.html">Course 3 Column</a></li>
+                                        <li><a href="#">Course Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">EVENTS</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Event List</a></li>
+                                        <li><a href="#">Event Grid</a></li>
+                                        <li><a href="#">Event Single</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Pages</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Our teachers</a></li>
+                                        <li><a href="#">teachers profile</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Error page</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">PORTFOLIO</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">portfolio 2 column</a></li>
+                                        <li><a href="#">portfolio 3 column</a></li>
+                                        <li><a href="#">portfolio 4 column</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">BLOG</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Blog details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">SHOP</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Shop Page</a></li>
+                                        <li><a href="#">Shop Details</a></li>
+                                    </ul>
+                                </li>
                                 <li><a href="">Contact</a></li>
                             </ul>
                         </div>
                         <div class="action-user">
-                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                            <button><i class="fa-solid fa-cart-shopping"></i></button>
+                            <label for="drop-search-box-check" class="search-button"><i
+                                    class="fa-solid fa-magnifying-glass"></i></label>
+                            <button>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
 
+                            <input type="checkbox" id="drop-search-box-check" hidden>
+                            <form action="" class="drop-search-box">
+                                <input type="text" id="" placeholder="search...">
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                            <label for="drop-search-box-check" class="search-button-overlay"></label>
                         </div>
                     </div>
                     <div class="hero">
                         <h1>SHOP</h1>
                         <ul>
-                            <li>Home</li>
-                            <li>Pages</li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Pages</a></li>
                             <li>Shop</li>
                         </ul>
                     </div>
@@ -125,12 +175,18 @@
             <!-- start Main -->
             <div class="main">
                 <div class="main-top">
-                    <select id="" name="product-filter">
-                        <option value="volvo">Select Filter</option>
-                        <option value="saab">By Price</option>
-                        <option value="mercedes">By Category</option>
-                        <option value="audi">By Date</option>
-                    </select>
+                    <div class="product-filter-wrapper">
+                        <label for="product-filter-checkbox" class="product-filter-label">Select Filter<i
+                                class="fa-solid fa-angle-down"></i></label>
+                        <input type="checkbox" name="" id="product-filter-checkbox" hidden>
+                        <ul class="product-filter-list">
+                            <li class="product-filter-list-item">Select Filter</li>
+                            <li class="product-filter-list-item">By Price</li>
+                            <li class="product-filter-list-item">By Category</li>
+                            <li class="product-filter-list-item">By Date</li>
+                        </ul>
+                    </div>
+
                     <div class="show-result">
                         <p>Showing 1-9 of 25 Result</p>
                     </div>
@@ -301,7 +357,7 @@
                 <p>Subscribe us to get all the latest news from us</p>
                 <form action="">
                     <input type="email" name="email" id="" placeholder="Your Email">
-                    <button class="btn btn-price">SEND</button>
+                    <button class="btn btn-price btn--large">SEND</button>
                 </form>
             </div>
         </div>

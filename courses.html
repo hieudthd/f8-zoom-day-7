@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
 
     <!-- link font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,41 +16,93 @@
         integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="./css/style.css">
+
     <title>Scholars - Education, University &amp; LMS HTML Template</title>
 </head>
 
 <body>
     <div class="courses-wrapper">
+        <!-- Start header -->
         <div class="header-wrapper">
             <div class="inner">
                 <div class="container ">
-                    <!-- start header -->
                     <div class="header">
                         <a href="#">
                             <img src="./img/logo.webp" alt="scholars logo" class="logo">
                         </a>
                         <div class="nav">
                             <ul>
-                                <li><a href="">Home</a></li>
-                                <li><a href="">COURSES</a></li>
-                                <li><a href="">EVENTS</a></li>
-                                <li><a href="">Pages</a></li>
-                                <li><a href="">PORTFOLIO</a></li>
-                                <li><a href="">BLOG</a></li>
-                                <li><a href="">SHOP</a></li>
+                                <li><a href="">Home</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Home version one</a></li>
+                                        <li><a href="#">Home version Two</a></li>
+                                        <li><a href="#">Home video background</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">COURSES</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Course 2 Column</a></li>
+                                        <li><a href="#">Course 3 Column</a></li>
+                                        <li><a href="#">Course Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">EVENTS</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Event List</a></li>
+                                        <li><a href="#">Event Grid</a></li>
+                                        <li><a href="#">Event Single</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Pages</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Our teachers</a></li>
+                                        <li><a href="#">teachers profile</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Error page</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">PORTFOLIO</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">portfolio 2 column</a></li>
+                                        <li><a href="#">portfolio 3 column</a></li>
+                                        <li><a href="#">portfolio 4 column</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">BLOG</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Blog details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">SHOP</a>
+                                    <ul class="submenu">
+                                        <li><a href="./shop.html">Shop Page</a></li>
+                                        <li><a href="#">Shop Details</a></li>
+                                    </ul>
+                                </li>
                                 <li><a href="">Contact</a></li>
                             </ul>
                         </div>
                         <div class="action-user">
-                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                            <button><i class="fa-solid fa-cart-shopping"></i></button>
+                            <label for="drop-search-box-check" class="search-button"><i
+                                    class="fa-solid fa-magnifying-glass"></i></label>
+                            <button>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
 
+                            <input type="checkbox" id="drop-search-box-check" hidden>
+                            <form action="" class="drop-search-box">
+                                <input type="text" id="" placeholder="search...">
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                            <label for="drop-search-box-check" class="search-button-overlay"></label>
                         </div>
                     </div>
                     <div class="hero">
                         <h1>COURSES</h1>
                         <ul>
-                            <li>Home</li>
+                            <li><a href="#">Home</a></li>
                             <li>Courses</li>
                         </ul>
                     </div>
@@ -381,9 +432,9 @@
                 <div class="subscribe">
                     <h3>Subscribe Us</h3>
                     <p>Subscribe us to get all the latest news from us</p>
-                    <form action="">
+                    <form action="#">
                         <input type="email" name="email" id="" placeholder="Your Email">
-                        <button class="btn btn-price">SEND</button>
+                        <button class="btn btn-price btn--large">SEND</button>
                     </form>
                 </div>
             </div>
