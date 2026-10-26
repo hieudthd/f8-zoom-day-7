@@ -837,3 +837,53 @@ select {
 .footer .btn--large:hover::before {
     transform: scale(1);
 }
+
+/* css cho outline-course.html */
+.outline-course-wrapper .course-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.outline-course-wrapper .course-content-wrapper h2{
+    align-self: center;
+    font-size: 2rem;
+}
+.outline-course-wrapper .sidebar-menu{
+    width: 30%;
+    height: 98vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 1px solid #f1f1f1;
+}
+.outline-course-wrapper .sidebar-menu a{
+    display: inline-block;
+    min-height: 32px;
+    text-decoration: none;
+    padding: 4px;
+    font-size: 1.6rem;
+}
+.outline-course-wrapper .sidebar-menu .heading{
+    display: block;
+    position: sticky;
+    top: 0;
+    left: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    background-color: #f1f1f1;
+    border-bottom: var(--border-color);
+}
+.outline-course-wrapper .sidebar-menu>li ul{
+    padding-left: 24px;
+    color: #000000b3;
+}
+.outline-course-wrapper .sidebar-menu>li ul a:hover, .outline-course-wrapper .sidebar-menu .heading:hover{
+    color: var(--primary-color);
+    transform: translateX(4px);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.outline-course-wrapper .sidebar-menu .active{
+    color: var(--primary-color);
+}
