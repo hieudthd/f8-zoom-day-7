@@ -874,15 +874,23 @@ select {
     font-weight: 600;
     background-color: #f1f1f1;
     border-bottom: var(--border-color);
+    transition: padding 0.3s ease, color 0.3s ease;
 }
 .outline-course-wrapper .sidebar-menu>li ul{
     padding-left: 24px;
     color: #000000b3;
 }
-.outline-course-wrapper .sidebar-menu>li ul a:hover, .outline-course-wrapper .sidebar-menu .heading:hover{
+.outline-course-wrapper .sidebar-menu>li ul a{
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.outline-course-wrapper .sidebar-menu>li ul a:hover{
     color: var(--primary-color);
     transform: translateX(4px);
-    transition: color 0.3s ease, transform 0.3s ease;
+    
+}
+.outline-course-wrapper .sidebar-menu .heading:hover{
+    padding-left: 8px;
+    color: var(--primary-color);
 }
 .outline-course-wrapper .sidebar-menu .active{
     color: var(--primary-color);
